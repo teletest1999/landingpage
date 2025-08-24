@@ -8,80 +8,120 @@
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background-color: #0f0f1f;
+      background: linear-gradient(180deg, #0f0f1f, #1a1a2e);
       color: white;
       text-align: center;
     }
 
     .header {
-      padding: 20px;
+      padding: 25px 15px;
       background: #111;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.5);
     }
 
     .game-icon {
-      width: 80px;
-      border-radius: 15px;
+      width: 90px;
+      border-radius: 20px;
+      box-shadow: 0 0 15px rgba(0,255,255,0.5);
     }
 
     .title {
-      font-size: 22px;
+      font-size: 24px;
       font-weight: bold;
-      margin: 10px 0;
+      margin: 12px 0;
     }
 
     .subtitle {
-      font-size: 14px;
-      color: #ccc;
+      font-size: 15px;
+      color: #bbb;
     }
 
     .progress {
-      margin: 20px auto;
-      width: 80%;
+      margin: 25px auto;
+      width: 85%;
       background: #222;
       border-radius: 25px;
       overflow: hidden;
+      box-shadow: 0 0 8px rgba(0,255,255,0.3);
     }
 
     .progress-bar {
-      width: 40%;
-      height: 25px;
+      width: 0%;
+      height: 28px;
       background: linear-gradient(90deg, #00f2ff, #0088ff);
       text-align: center;
-      line-height: 25px;
-      font-size: 12px;
+      line-height: 28px;
+      font-size: 13px;
+      font-weight: bold;
+      animation: loading 5s forwards;
+    }
+
+    @keyframes loading {
+      0% { width: 0%; }
+      100% { width: 100%; }
     }
 
     .offer {
       margin: 30px auto;
-      width: 80%;
+      width: 85%;
       background: #1e1e2e;
       padding: 15px;
-      border-radius: 12px;
+      border-radius: 14px;
       text-align: right;
+      box-shadow: 0 0 15px rgba(0,0,0,0.5);
     }
 
     .offer img {
       width: 100%;
       border-radius: 10px;
+      margin-top: 10px;
     }
 
     .offer-title {
-      font-size: 16px;
+      font-size: 17px;
       margin: 10px 0;
+      font-weight: bold;
     }
 
     .offer-sub {
-      font-size: 13px;
+      font-size: 14px;
       color: #aaa;
     }
 
     .free-tag {
-      background: green;
+      background: #28a745;
       color: white;
-      padding: 3px 8px;
+      padding: 4px 10px;
       border-radius: 8px;
       float: left;
       font-size: 13px;
+      font-weight: bold;
+    }
+
+    .download-btn {
+      display: none;
+      margin: 25px auto;
+      padding: 14px 35px;
+      font-size: 17px;
+      font-weight: bold;
+      background: linear-gradient(90deg, #00f2ff, #0088ff);
+      border: none;
+      border-radius: 40px;
+      color: #fff;
+      cursor: pointer;
+      transition: 0.3s;
+      box-shadow: 0 0 12px rgba(0,255,255,0.4);
+      animation: fadeIn 1s forwards;
+    }
+
+    .download-btn:hover {
+      transform: scale(1.05);
+      opacity: 0.9;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(15px); }
+      to { opacity: 1; transform: translateY(0); }
     }
 
     .help {
@@ -92,6 +132,7 @@
       padding: 8px 15px;
       border-radius: 20px;
       font-size: 13px;
+      box-shadow: 0 0 8px rgba(0,0,0,0.4);
     }
   </style>
 </head>
@@ -114,7 +155,20 @@
     <div class="offer-sub">أدخل رقم الهاتف لتحميل الألعاب الآن</div>
   </div>
 
+  <!-- زر التحميل يظهر بعد 5 ثواني -->
+  <a href="https://www.mediafire.com/" target="_blank">
+    <button class="download-btn">⬇️ Download Now</button>
+  </a>
+
   <div class="help">👋 Need help?</div>
+
+  <script>
+    setTimeout(() => {
+      const bar = document.querySelector('.progress-bar');
+      bar.innerText = "1 of 1 Offers Completed";
+      document.querySelector('.download-btn').style.display = "block";
+    }, 5000);
+  </script>
 
 </body>
 </html>

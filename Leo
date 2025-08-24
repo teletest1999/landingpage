@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Baseball 9 MOD IOS</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #0f0f1f;
+      color: white;
+      text-align: center;
+    }
+
+    .header {
+      padding: 20px;
+      background: #111;
+    }
+
+    .game-icon {
+      width: 80px;
+      border-radius: 15px;
+    }
+
+    .title {
+      font-size: 22px;
+      font-weight: bold;
+      margin: 10px 0;
+    }
+
+    .subtitle {
+      font-size: 14px;
+      color: #ccc;
+    }
+
+    .progress {
+      margin: 20px auto;
+      width: 80%;
+      background: #222;
+      border-radius: 25px;
+      overflow: hidden;
+    }
+
+    .progress-bar {
+      width: 40%;
+      height: 25px;
+      background: linear-gradient(90deg, #00f2ff, #0088ff);
+      text-align: center;
+      line-height: 25px;
+      font-size: 12px;
+    }
+
+    .offer {
+      margin: 30px auto;
+      width: 80%;
+      background: #1e1e2e;
+      padding: 15px;
+      border-radius: 12px;
+      text-align: right;
+    }
+
+    .offer img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    .offer-title {
+      font-size: 16px;
+      margin: 10px 0;
+    }
+
+    .offer-sub {
+      font-size: 13px;
+      color: #aaa;
+    }
+
+    .free-tag {
+      background: green;
+      color: white;
+      padding: 3px 8px;
+      border-radius: 8px;
+      float: left;
+      font-size: 13px;
+    }
+
+    .help {
+      position: fixed;
+      bottom: 20px;
+      left: 20px;
+      background: #222;
+      padding: 8px 15px;
+      border-radius: 20px;
+      font-size: 13px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <img src="https://play-lh.googleusercontent.com/6h5V4vTi4y5ZV3cEdxgrshRukS3h6fC3YcU7XobJfY7n4fUuDjsTiQoywpHcZYiE1Q=s96" alt="icon" class="game-icon">
+    <div class="title">Baseball 9 MOD IOS</div>
+    <div class="subtitle">Baseball 9 Mod Download is almost ready! Complete one quick task to unlock your download.</div>
+  </div>
+
+  <div class="progress">
+    <div class="progress-bar">0 of 1 Offers Completed</div>
+  </div>
+
+  <div class="offer">
+    <span class="free-tag">Free</span>
+    <img src="https://via.placeholder.com/400x200/222/fff?text=Game+Offer" alt="offer">
+    <div class="offer-title">تنزيل الألعاب الجديدة هنا!</div>
+    <div class="offer-sub">أدخل رقم الهاتف لتحميل الألعاب الآن</div>
+  </div>
+
+  <div class="help">👋 Need help?</div>
+
+</body>
+</html>
